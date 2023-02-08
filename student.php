@@ -1,8 +1,5 @@
 <?php
 
-use Student as GlobalStudent;
-
-
 class Student {
         private $id;
         private $fname;
@@ -40,8 +37,6 @@ class Student {
      echo "image: " . $student->getimage() . "william.jpg";
      echo "program_id: " . $student->getprogram_id() . "1";
      
-        
-
 ?>
 
 
