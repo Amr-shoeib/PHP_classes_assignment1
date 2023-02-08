@@ -18,7 +18,6 @@ class Student {
     $this->program_Id = $program_id;
     $this->level = $level;
   }
-
   public function getid() {
     return $this->id;
   }
