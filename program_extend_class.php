@@ -22,22 +22,22 @@ class Program {
     }
   }
   
-  class Course extends Program {
-    public $courseId;
+  class Full_time_program extends Program {
+    public $Full_time_programId;
   
-    public function setCourseId($courseId) {
-      $this->courseId = $courseId;
+    public function setFull_time_programId($Full_time_programId) {
+      $this->Full_time_programId = $Full_time_programId;
     }
   
-    public function getCourseId() {
-      return $this->courseId;
+    public function getFull_time_program() {
+      return $this->Full_time_programId;
     }
   }
   
-  $course->setName("php");
-  $course->coursetId("1");
+  $Full_time_program->setName("php");
+  $Full_time_program->coursetId("1");
   
-  echo $course->getName() . " is a course with ID " . $course->getCourseId() . " and is 1" ;
+  echo $course->getName() . " is a course with ID " . $Full_time_programe->getFull_time_programeId() . " and is 1" ;
   
 
 
