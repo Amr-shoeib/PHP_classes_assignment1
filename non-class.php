@@ -1,9 +1,7 @@
 
 
 
-<?php
-require_once('student_getter&setter.php');
-?>
+
 
 <h1>Welcome to My Website</h1>
 
@@ -16,13 +14,10 @@ require_once('program.php');
 ?>
 
 <?php
-require_once('courses.php');
+require_once('course.php');
 ?>
 
-<?php
-require_once('courses.php');
-?>
 
 <?php
-require_once('program_extend_class.php');
+require_once('student.php');
 ?>
