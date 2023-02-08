@@ -1,69 +1,45 @@
-<?php
+<?
+
 
 class Program {
-    private $id;
-    private $name;
-
-    public function __construct($id, $name)
-    {
-        $this->id = $id;
-        $this->name = $name;
-    }
-
-    public function programId(){
-        echo $this->id . 'program id';
-    }
-
-    public function getName(){
-       return $this->name . 'IDP';
-    }
-
-    public function setname($name){
-        if(is_string($name) && strlen($name) >1){
-            $this->name = $name;
-            return "name has been updated to $name";
-        }else{
-            return 'not a valid name';
-        }
-    }
-}
-
-$program1 = new program ('id', 'name');
-echo $programName->getName();
-$programName->setname('IMS');
-
-
-
-// /     public function setid($id) {
-//        $this->id = $id;
-//     }
- 
-//     public function getid() {
-//        return $this->id;
-//     }
- 
-//     public function setname($name) {
-//        $this->name = $name;
-//     }
- 
-//     public function getname() {
-//        return $this->name;
-    
-//     }
-    
-//  }
-
- 
- 
-//  $program = new Program();
-//  $program->setid("1");
-//  $program->setname("IDP");
- 
- 
-//  echo "id: " . $program->getid() . "<br>";
-//  echo "name: " . $program->getname();
- 
+    public $name;
+    public $id;
   
+    public function setName($name) {
+      $this->name = $name;
+    }
   
+    public function setid($id) {
+      $this->id = $id;
+    }
+  
+    public function getName() {
+      return $this->name;
+    }
+  
+    public function getid() {
+      return $this->id;
+    }
+  }
+  
+  class Full_time_program extends Program {
+    public $Full_time_programId;
+  
+    public function setFull_time_programId($Full_time_programId) {
+      $this->Full_time_programId = $Full_time_programId;
+    }
+  
+    public function getFull_time_program() {
+      return $this->Full_time_programId;
+    }
+  }
+  
+  $Full_time_program->setName("php");
+  $Full_time_program->coursetId("1");
+  
+  echo $course->getName() . " is a course with ID " . $Full_time_programe->getFull_time_programeId() . " and is 1" ;
+  
+
+
 
 ?>
